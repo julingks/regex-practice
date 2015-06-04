@@ -1,3 +1,5 @@
 import re
-m = re.search('(?<=abc)def', 'abcdef')
-m.group(0)
+pattern = r"(\w+) (\w+)"
+string = "Isaac Newton, physicist"
+m = re.match(pattern, string)
+print(m.group(0))
